@@ -1,0 +1,35 @@
+<h1>Tarefa</h1>
+<hr />
+
+<button type="button" class="btn btn-primary bg-primary mb-2" [routerLink]="['/new']">
+  Nova Tarefa
+</button>
+
+<section>
+  <div *ngIf="tasks.length == 0" class="alert alert-warning" role="alert" >
+    Nenhuma tarefa foi cadastrada
+  </div>
+
+
+  <ul class="list-group">
+    <li class="list-group-item task-item" *ngFor="let task of tasks">
+      <div class="form-group form-check">
+        <input type="checkbox" class="form-check-input" [(ngModel)]="task.completed" (change)="onCompletedCheckChange(task)"/>
+      </div>
+
+      <div [innerHTML]="task.description" class="task-item-description"
+      [ngClass]="task.completed ? 'task-completed' : '' ">
+      <!-- Interpolation -->
+
+      </div>
+
+      <div>
+      <button type="button" [routerLink]="['/edit', task.id]" class="btn btn-primary mr-1">Alterar</button>
+      </div>
+
+      <div>
+      <button type="button" id="button-1"  class="btn btn-danger mt-2" (click)="remove(task)">Excluir</button>
+      </div>
+    </li>
+  </ul>
+</section>
