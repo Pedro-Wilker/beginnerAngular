@@ -15,8 +15,8 @@
 
 <hr/>
 
-<h5>What does this project do?
-This application has as its principles to create lists of tasks, where it is possible to modify, create and check them. </h5>
+<h4>What does this project do? </h4>
+<h6>This application has as its principles to create lists of tasks, where it is possible to modify, create and check them. </h6>
 
 <hr/>
 <h6>Foram utilizadas as seguintes ferramentas:
