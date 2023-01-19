@@ -6,6 +6,7 @@
 
 <h5>In this project, Google's Angular framework was used. The objective was just to start and become familiar with the framework, in this repository you will find the following information: <br/> 
   <ol>
+   <br/> 
   <li>Basic tool explanations.</li>
   <li>How to create task, routers and components</li>
   <li>How to create forms </li>
@@ -21,6 +22,7 @@
 <hr/>
 <h6>Foram utilizadas as seguintes ferramentas:
   <ul> 
+   <br/> 
   <li>Angular</li>
   <li>JavaScript</li>
   <li>HTML</li>
